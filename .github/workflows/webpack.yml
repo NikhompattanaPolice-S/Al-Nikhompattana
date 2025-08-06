@@ -24,5 +24,10 @@ jobs:
 
     - name: Build
       run: |
+        npm install gh-pages --save-dev
+        npm install --save-dev webpack-cli
+        npx create-new-webpack-app init
         npm install
         npx webpack
+        npm run export
+        npm run deploy
