@@ -98,3 +98,9 @@
     "typescript": "^5"
   }
 }
+{
+  "scripts": {
+    "export": "next build && next export",
+    "deploy": "gh-pages -d out"
+  }
+}
